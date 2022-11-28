@@ -18,7 +18,7 @@ if(navClose){
     })
 }
 /*=============== REMOVE MENU MOBILE ===============*/
-const navLink = document.querySelectorAll('nav__link')
+const navLink = document.querySelectorAll('.nav__link')
 
 const linkAction = () =>{
     const navMenu = document.getElementById('nav-menu')
@@ -31,7 +31,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 const scrollHeader = () =>{
     const header = document.getElementById('header')
     // When scroll is greater than 50 viewport height, code adds to scroll-header class to the header tag
-    this.scrollY >=50? header.classList.add('header-bg'): header.classList.remove('header-bg')
+    this.scrollY >=50 ? header.classList.add('header-bg') : header.classList.remove('header-bg')
 }
 window.addEventListener('scroll', scrollHeader)
 
@@ -39,7 +39,7 @@ window.addEventListener('scroll', scrollHeader)
 const sr = ScrollReveal({
     origin: 'bottom',
     distance: '60px',
-    duration:2500,
+    duration: 2500,
 })
 
 sr.reveal(`.home__images`, {distance:'120px', delay: 400})
